@@ -1,0 +1,86 @@
+
+#header {
+  &-home {
+    text-align: center;
+    position: fixed;
+
+    .container {
+      display: grid;
+      place-items: center;
+      background: black; //TODO change color var
+      //background: $dark--bg;
+      position: fixed;
+      height: 100%;
+      width: 25%;
+      margin: 0;
+      padding: 0;
+    }
+
+      h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+      }
+    }
+  }
+
+#main-nav {
+  padding-top: 1rem;
+  display: flex;
+  li {
+    padding: 1rem 1.5rem;
+  }
+
+  a {
+    color: #f4f4f4;
+    text-decoration: none;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+  }
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+input {
+  &:checked + label {
+    background: #f4f4f4;
+  }
+
+  &:checked + label:after {
+    left: calc(100% - 5%);
+    transform: translateX(-100%);
+    background: grey;
+  }
+}
+
+#switch {
+  position: relative;
+  text-indent: -9999px;
+  width: 12%;
+  height:6%;
+  background-color: grey;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 0;
+  display: block;
+
+  &:after {
+    content: '';
+	  position: absolute;
+	  top: 5%;
+	  left: 5%;
+	  width: 40%;
+	  height: 90%;
+	  background: #fff;
+	  border-radius: 90px;
+	  transition: 0.3s;
+  }
+
+  &:active:after {
+    width: 40%;
+  }
+}

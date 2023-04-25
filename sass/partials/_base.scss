@@ -1,0 +1,83 @@
+//Todo change the variable to other file
+$dark-color: #333;
+$light-color: #f4f4f4;
+
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: $dark-color;
+  color: $light-color;
+}
+
+a {
+  text-decoration: none;
+  color: $light-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,h3,h4 {
+  text-transform: uppercase;
+}
+
+
+.container {
+  padding: 0 15rem;
+  margin: auto;
+}
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  color: $light-color;
+  background-color: $dark-color;
+}
+
+.align-right {
+  margin-left: 25%;
+}
+
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+//Padding
+.py {
+  &-1 {padding: 1rem 0;}
+  &-2 {padding: 2rem 0;}
+  &-3 {padding: 3rem 0;}
+  &-4 {padding: 4rem 0;}
+}
+
+.my {
+  &-1 {margin: 1rem 0;}
+  &-2 {margin: 2rem 0;}
+  &-3 {margin: 3rem 0;}
+  &-4 {margin: 4rem 0;}
+}
+
+
+#main {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
