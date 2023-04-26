@@ -1,0 +1,30 @@
+#contact {
+  display: flex;
+  height: 80%;
+  .container {
+    display: grid;
+    grid-template-areas:
+    "name" "name"
+    "email" "email"
+    "subject" "subject"
+    "message" "message";
+    grid-gap: 4rem;
+    label, input, textarea,{
+      width: 100%;
+      padding: 0.4rem;
+      margin-bottom: 1em;
+      border-radius: 5px;
+      border-color: #f4f4f4;
+      background: #333;
+      color: #f4f4f4;
+    }
+    textarea {
+      height: 70%;
+    }
+
+    button {
+      width: 200px;
+      height: 60px;
+    }
+  }
+}
