@@ -1,10 +1,13 @@
 use leptos::*;
 
+use crate::{Animations, AnimationsProps};
+
 const COPYRIGHT: &str = "© 2023";
 
 #[component]
 pub fn Navbar(cx: Scope) -> impl IntoView {
     view! {cx,
+    <Animations />
     <header id="header-home">
         <div class="container">
             <nav id="main-nav">

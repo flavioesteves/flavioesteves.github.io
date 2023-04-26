@@ -6,14 +6,15 @@ use pages::homepage::{Homepage, HomepageProps};
 use pages::notfound::{NotFoundPage, NotFoundPageProps};
 
 mod components;
+use components::cursor_animation::{Animations, AnimationsProps};
 use components::navbar::{Navbar, NavbarProps};
 
 #[component]
 pub fn App(cx: Scope) -> impl IntoView {
-    log::debug!("rendering APP");
-
     view! {cx,
     <div id="main">
+        <div id="circle"></div>
+        <div id="cursor"></div>
         <Navbar/>
         <Router>
         <Routes>
