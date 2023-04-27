@@ -3,7 +3,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height:80%;
+      height:90%;
 
       .container {
         display: grid;
@@ -30,6 +30,15 @@
           height:100%;
           position: absolute;
           border: 1px solid  white;
+        }
+        .social {
+          margin-top: 4rem;
+          display: flex;
+          
+          li {
+            display: inline-block;
+            margin-right: 1rem;
+        }
         }
     }
   }

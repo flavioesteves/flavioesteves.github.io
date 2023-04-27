@@ -30,56 +30,16 @@
   }
 
   a {
-    color: #f4f4f4;
+    
+    //color: #767676;
     text-decoration: none;
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
     transition: border-color 0.5s;
+  
+    &:hover {
+      color: #f4f4f4;
+    }
   }
 }
 
-input[type=checkbox] {
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
-
-input {
-  &:checked + label {
-    background: #f4f4f4;
-  }
-
-  &:checked + label:after {
-    left: calc(100% - 5%);
-    transform: translateX(-100%);
-    background: grey;
-  }
-}
-
-#switch {
-  position: relative;
-  text-indent: -9999px;
-  width: 12%;
-  height:6%;
-  background-color: grey;
-  border-radius: 50px;
-  cursor: pointer;
-  padding: 0;
-  display: block;
-
-  &:after {
-    content: '';
-	  position: absolute;
-	  top: 5%;
-	  left: 5%;
-	  width: 40%;
-	  height: 90%;
-	  background: #fff;
-	  border-radius: 90px;
-	  transition: 0.3s;
-  }
-
-  &:active:after {
-    width: 40%;
-  }
-}

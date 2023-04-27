@@ -8,7 +8,6 @@ use pages::homepage::{Homepage, HomepageProps};
 use pages::notfound::{NotFoundPage, NotFoundPageProps};
 
 mod components;
-use components::cursor_animation::{Animations, AnimationsProps};
 use components::navbar::{Navbar, NavbarProps};
 
 #[component]

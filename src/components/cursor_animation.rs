@@ -1,6 +1,6 @@
 use leptos::*;
 use wasm_bindgen::prelude::*;
-use web_sys::{console, Event, HtmlElement};
+use web_sys::{Event, HtmlElement};
 
 #[component]
 pub fn Animations(cx: Scope) -> impl IntoView {

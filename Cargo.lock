@@ -841,6 +841,7 @@ dependencies = [
  "console_error_panic_hook",
  "console_log",
  "leptos 0.2.5",
+ "leptos_meta",
  "leptos_router",
  "log",
  "wasm-bindgen",
@@ -945,6 +946,19 @@ dependencies = [
  "syn 1.0.109",
  "syn-rsx",
  "uuid",
+]
+
+[[package]]
+name = "leptos_meta"
+version = "0.2.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "950533f057299e75f48471211dc9b46e0d00c640fd14bda92c34e2705add7b8d"
+dependencies = [
+ "cfg-if",
+ "leptos 0.2.5",
+ "tracing",
+ "wasm-bindgen",
+ "web-sys",
 ]
 
 [[package]]

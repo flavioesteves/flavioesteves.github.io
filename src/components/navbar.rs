@@ -1,15 +1,19 @@
 use leptos::*;
 
-use crate::{Animations, AnimationsProps};
+use crate::components::cursor_animation::{Animations, AnimationsProps};
+use crate::components::theme_switch::{ThemeSwitch, ThemeSwitchProps};
 
 const COPYRIGHT: &str = "© 2023";
 
 #[component]
 pub fn Navbar(cx: Scope) -> impl IntoView {
     view! {cx,
+
     <Animations />
     <header id="header-home">
         <div class="container">
+
+            <ThemeSwitch />
             <nav id="main-nav">
                 <ul>
                     <li><a href="/" class="a-link">"Home"</a></li>

@@ -10,17 +10,15 @@
   z-index:1;
   transition: transform .5s;
   background: #f4f4f4;
-    &:hovered {
-      background: #3a0ca1;
-      transform: scale(6.2);
-    }
+  //opacity:0.2;
+
+  &.hovered {
+    //opacity:0.2;
+    background: #f4f4f4;
+    transform: scale(15);
+  }
 }
 
-#cursor.hovered {
-  background: #f4f4f4;
-  //background:#3a0ca3 ;
-  transform: scale(15);
-}
 
 #circle {
   position: absolute;
@@ -33,9 +31,9 @@
   border: 2px solid rgba(255, 255, 255, .5);
   transition: all .2s cubic-bezier(0, 0.5, 1, 1);
   z-index: 1;
+    
+  &.hovered {
+    background: #bbb;
+    transform: scale(0);
+  }
  }
-
-#circle.hovered {
-  bacground: #f4f4f4;
-  transform: scale(0);
-}
