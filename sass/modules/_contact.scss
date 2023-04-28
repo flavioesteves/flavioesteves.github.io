@@ -14,9 +14,9 @@
       padding: 0.4rem;
       margin-bottom: 1em;
       border-radius: 5px;
-      border-color: #f4f4f4;
-      background: #333;
-      color: #f4f4f4;
+      border-color: var(--color);
+      background: var(--bg);
+      color: (var(--color));
     }
     textarea {
       height: 70%;

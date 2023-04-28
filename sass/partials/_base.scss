@@ -1,22 +1,19 @@
-//Todo change the variable to other file
-$dark-color: #333;
-$light-color: #f4f4f4;
-
 // General Styles
 * {
   margin: 0;
   padding: 0;
 }
 
+
 body {
   font-family: "Oswald", sans-serif;
- // background-color: $dark-color;
- // color: $light-color;
+  background: var(--bg);
+  color: var(--color);
 }
 
 a {
   text-decoration: none;
-  color: $light-color;
+  color: var(--color);
 }
 
 ul {
@@ -42,8 +39,8 @@ h2,h3,h4 {
 }
 
 .btn {
-  color: $light-color;
-  background-color: $dark-color;
+  color: var(--color);
+  background-color: var(--bg);
 }
 
 .align-right {
@@ -81,3 +78,5 @@ h2,h3,h4 {
   height: 100%;
   width: 100%;
 }
+
+

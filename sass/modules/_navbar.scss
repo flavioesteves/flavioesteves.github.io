@@ -7,12 +7,20 @@
     .container {
       display: grid;
       place-items: center;
-      background: black; //TODO change color var
+      background-color: var(--nav-color);
+      color: var(--color);
       position: fixed;
       height: 100%;
       width: 25%;
       margin: 0;
       padding: 0;
+
+  a {
+      color: var(--bg);
+        &:hover {
+          color: var(--highlight);
+         }
+      }
     }
 
       h1 {
@@ -24,22 +32,21 @@
 
 #main-nav {
   padding-top: 1rem;
+
   display: flex;
   li {
     padding: 1rem 1.5rem;
   }
 
   a {
-    
-    //color: #767676;
+    color: var(--bg);
     text-decoration: none;
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
     transition: border-color 0.5s;
   
     &:hover {
-      color: #f4f4f4;
+     color: var(--highlight);
     }
   }
 }
-
