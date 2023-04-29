@@ -1,14 +1,3 @@
-$seasalt: #f8f9fa;
-$antiflash-white: #e9ecef;
-$platinum: #dee2e6;
-$french-gray: #ced4da;
-$french-gray-2: #adb5bd;
-$slate-gray: #6c757d;
-$outer-space: #495057;
-$onyx: #343a40;
-$eerie-black: #212529;
-
-
 :root {
     --bg: #dee2e6;
     --color: #495057;
@@ -18,7 +7,8 @@ $eerie-black: #212529;
     --nav-color: #6c757d;
 }
 
-@media (prefers-color-scheme: "dark") {
+
+@media (prefers-color-scheme: dark) {
     :root {
     --bg: #343a40;
     --color: #dee2e6;
@@ -28,5 +18,3 @@ $eerie-black: #212529;
     --nav-color: #adb5bd;
   }
 } 
-
-
