@@ -1,4 +1,5 @@
 use leptos::*;
+use leptos_meta::provide_meta_context;
 use leptos_router::*;
 
 mod pages;
@@ -12,6 +13,8 @@ use components::navbar::{Navbar, NavbarProps};
 
 #[component]
 pub fn App(cx: Scope) -> impl IntoView {
+    provide_meta_context(cx);
+
     view! {cx,
     <div id="main">
         <Navbar/>
