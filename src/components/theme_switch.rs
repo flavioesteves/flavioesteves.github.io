@@ -27,7 +27,9 @@ pub fn ThemeSwitch(cx: Scope) -> impl IntoView {
 
 fn set_scheme(theme: &str) -> () {
     let theme_selector = get_document_element();
-    theme_selector.set_attribute("data-theme", &theme);
+    theme_selector
+        .set_attribute("data-theme", &theme)
+        .expect("Data theme not correctly set");
     ()
 }
 

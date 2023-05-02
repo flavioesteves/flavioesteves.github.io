@@ -1,0 +1,70 @@
+// Tablets & Smaller
+@media(max-width: 800px) {
+
+}
+
+
+
+// Smartphones
+@media(max-width: 500px) {
+
+  #header {
+    display: fixed;
+    &-home {
+      .container {
+        height: 812px;
+        width: 100px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+      a {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  #main-nav{
+    .copyright {
+      font-size: 0.8rem;
+    
+    }
+  }
+
+
+
+  #home {
+
+        height: 90%;
+    &-a {
+      .container {
+        display: grid;
+        grid-template-areas:
+          "personal-image"
+          "resume";
+          grid-gap: 2rem;
+
+        h1 {
+          font-size: 2rem;  
+        }
+      }
+    }
+  }
+}
+
+
+
+
+// Home
+// About
+// Contact Me
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  .container {
+    grid-gap: 2rem;
+  }
+}
