@@ -1,6 +1,6 @@
 #contact {
   display: flex;
-  height: 80%;
+  height: 90%;
   .container {
     display: grid;
     grid-template-areas:
@@ -9,7 +9,7 @@
     "subject" "subject"
     "message" "message";
     grid-gap: 4rem;
-    label, input, textarea,{
+    label, input, textarea {
       width: 100%;
       padding: 0.4rem;
       margin-bottom: 1em;
@@ -20,6 +20,7 @@
     }
     textarea {
       height: 70%;
+
     }
 
     button {

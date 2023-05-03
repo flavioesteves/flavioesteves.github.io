@@ -2,19 +2,22 @@
     --bg: #dee2e6;
     --color: #495057;
     --color-title: #212529;
-    --highlight: #5dadec;
-    --cursor: #9fa2e6;
     --nav-color: #6c757d;
+    --highlight: #212529;
+    --cursor: #212529;
+
+    //--cursor: #9fa2e6;
+    //--highlight: #5dadec;
 }
-
-
-
 
 :root[data-theme="dark"] { 
     --bg: #343a40;
     --color: #dee2e6;
     --color-title: #ced4da;
-    --highlight: #9fa2e6;
-    --cursor: #5dadec;
-      --nav-color: #adb5bd;
+    --highlight: #f4f4f4;
+    --cursor: #f4f4f4;
+    --nav-color: #adb5bd;
+
+    //--cursor: #5dadec;
+    //--highlight: #9fa2e6;
 }
