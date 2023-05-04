@@ -5,10 +5,8 @@ use web_sys::{console, window, Document, Element, Window};
 /// Theme Switcher beetween dark and light theme colors
 #[component]
 pub fn ThemeSwitch(cx: Scope) -> impl IntoView {
-    //  provide_meta_context(cx);
     let is_light = get_theme();
 
-    console::log_1(&JsValue::from_str(&is_light.to_string()));
     let (prefers_theme, set_prefers_theme) = create_signal(cx, is_light);
 
     let change_theme = move |_| {
@@ -21,7 +19,7 @@ pub fn ThemeSwitch(cx: Scope) -> impl IntoView {
     };
 
     view! { cx,
-        <button on:click=change_theme>"Hello"</button>
+        <button class="btn" on:click=change_theme><i class="fa-regular fa-moon fa-4x" ></i></button>
     }
 }
 
