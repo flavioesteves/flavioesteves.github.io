@@ -1,13 +1,14 @@
 use leptos::*;
-use wasm_bindgen::JsValue;
-use web_sys::{console, window, Document, Element, Window};
+use web_sys::{window, Document, Element, Window};
 
 /// Theme Switcher beetween dark and light theme colors
 #[component]
 pub fn ThemeSwitch(cx: Scope) -> impl IntoView {
-    let is_light = get_theme();
+    let is_dark = get_theme();
 
-    let (prefers_theme, set_prefers_theme) = create_signal(cx, is_light);
+    let (prefers_theme, set_prefers_theme) = create_signal(cx, is_dark);
+
+    let theme_icon = move || format!("fa-regular {} fa-4x", set_icon(prefers_theme.get()));
 
     let change_theme = move |_| {
         set_prefers_theme.update(|dark| *dark = !*dark);
@@ -19,7 +20,15 @@ pub fn ThemeSwitch(cx: Scope) -> impl IntoView {
     };
 
     view! { cx,
-        <button class="btn" on:click=change_theme><i class="fa-regular fa-moon fa-4x" ></i></button>
+        <button class="btn" on:click=change_theme><i class={theme_icon} ></i></button>
+    }
+}
+
+fn set_icon(is_dark: bool) -> &'static str {
+    if is_dark {
+        "fa-sun"
+    } else {
+        "fa-moon"
     }
 }
 
