@@ -1,6 +1,8 @@
 use leptos::*;
 use web_sys::{window, Document, Element, Window};
 
+use crate::assets::svg::icons::{Moon, MoonProps, Sun, SunProps};
+
 /// Theme Switcher beetween dark and light theme colors
 #[component]
 pub fn ThemeSwitch(cx: Scope) -> impl IntoView {
@@ -21,6 +23,10 @@ pub fn ThemeSwitch(cx: Scope) -> impl IntoView {
 
     view! { cx,
         <button class="btn" on:click=change_theme><i class={theme_icon} ></i></button>
+    <div>
+        <Moon />
+        <Sun />
+    </div>
     }
 }
 
