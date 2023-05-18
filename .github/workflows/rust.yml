@@ -16,11 +16,10 @@ jobs:
       - uses: jetli/wasm-bindgen-action@v0.1.0
       - run: rustup install nightly  && rustup default nightly && rustup target add wasm32-unknown-unknown
       - uses: actions/checkout@v2
-      - run: trunk build --release
 
+      - run: trunk build --release --public-url /${{ github.event.repository.name }}/
 
       - uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
-          github_token: $
-          publish_dir: ./dis
+          publish_dir: ./dist
