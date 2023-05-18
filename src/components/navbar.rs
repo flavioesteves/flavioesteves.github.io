@@ -17,8 +17,8 @@ pub fn Navbar(cx: Scope) -> impl IntoView {
             <nav id="main-nav">
                 <ul>
                     <li><a href="/" class="a-link">"Home"</a></li>
-                    <li><a href="/about" class="a-link">"About"</a></li>
-                    <li><a href="/contact" class="a-link">"Contact"</a></li>
+                    <li><a href="about" class="a-link">"About"</a></li>
+                    <li><a href="contact" class="a-link">"Contact"</a></li>
                 </ul>
             </nav>
             <div class="copyright">

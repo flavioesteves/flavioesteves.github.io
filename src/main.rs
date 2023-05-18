@@ -21,9 +21,9 @@ pub fn App(cx: Scope) -> impl IntoView {
         <Router>
         <Routes>
             <Route path=""  view=|cx| view! {cx, <Homepage/>} />
-            <Route path="/about" view=|cx| view! {cx, <About />} />
-            <Route path="/contact" view=|cx| view! {cx, <Contact />} />
-            <Route path= "/*any" view=|cx| view! {cx, <NotFoundPage />} />
+            <Route path="about" view=|cx| view! {cx, <About />} />
+            <Route path="contact" view=|cx| view! {cx, <Contact />} />
+            <Route path= "*any" view=|cx| view! {cx, <NotFoundPage />} />
         </Routes>
         </Router>
     </div>
