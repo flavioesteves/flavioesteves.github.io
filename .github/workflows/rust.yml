@@ -2,7 +2,7 @@ name: Rust
 on:
   workflow_run:
     branches: [master]
-    workflows: [Rust]
+    workflows: [Continuous integration]
     types: [completed]
 
 jobs:
