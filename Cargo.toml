@@ -8,8 +8,8 @@ license = "MIT"
 [features]
 default = ["csr"]
 csr = ["leptos/csr"]
-hydrate= ["leptos/hydrate", "leptos_meta/hydrate"]
-ssr = ["leptos/ssr"]
+# hydrate= ["leptos/hydrate", "leptos_meta/hydrate"]
+# ssr = ["leptos/ssr"]
 
 
 [dependencies]
