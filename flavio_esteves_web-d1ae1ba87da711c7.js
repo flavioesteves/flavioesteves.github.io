@@ -829,7 +829,7 @@ function initSync(module) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('flavio_esteves_web-69484545adf7d124_bg.wasm', import.meta.url);
+        input = new URL('flavio_esteves_web-d1ae1ba87da711c7_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
