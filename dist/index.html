@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head>
+
+  <title>Flavio Esteves</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&amp;family=Oswald&amp;display=swap" rel="stylesheet">
+
+
+  <script src="https://kit.fontawesome.com/520cbb78f3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles-c3a3c7e26e7d848f.css">
+  
+
+  <base href="/">
+
+
+<link rel="preload" href="/flavio_esteves_web-1be45cc503fec601_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/flavio_esteves_web-1be45cc503fec601.js"></head>
+
+<body>
+<script type="module">import init from '/flavio_esteves_web-1be45cc503fec601.js';init('/flavio_esteves_web-1be45cc503fec601_bg.wasm');</script><script>(function () {
+    var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    var url = protocol + '//' + window.location.host + '/_trunk/ws';
+    var poll_interval = 5000;
+    var reload_upon_connect = () => {
+        window.setTimeout(
+            () => {
+                // when we successfully reconnect, we'll force a
+                // reload (since we presumably lost connection to
+                // trunk due to it being killed, so it will have
+                // rebuilt on restart)
+                var ws = new WebSocket(url);
+                ws.onopen = () => window.location.reload();
+                ws.onclose = reload_upon_connect;
+            },
+            poll_interval);
+    };
+
+    var ws = new WebSocket(url);
+    ws.onmessage = (ev) => {
+        const msg = JSON.parse(ev.data);
+        if (msg.reload) {
+            window.location.reload();
+        }
+    };
+    ws.onclose = reload_upon_connect;
+})()
+</script></body></html>

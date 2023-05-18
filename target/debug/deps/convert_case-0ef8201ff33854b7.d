@@ -1,0 +1,11 @@
+/media/L/SoftwareDevelopment/Projects/flavioesteves.github.io/target/debug/deps/convert_case-0ef8201ff33854b7.rmeta: /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/lib.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/case.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/converter.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/pattern.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/segmentation.rs
+
+/media/L/SoftwareDevelopment/Projects/flavioesteves.github.io/target/debug/deps/libconvert_case-0ef8201ff33854b7.rlib: /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/lib.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/case.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/converter.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/pattern.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/segmentation.rs
+
+/media/L/SoftwareDevelopment/Projects/flavioesteves.github.io/target/debug/deps/convert_case-0ef8201ff33854b7.d: /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/lib.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/case.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/converter.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/pattern.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/segmentation.rs
+
+/home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/lib.rs:
+/home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/case.rs:
+/home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/converter.rs:
+/home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/pattern.rs:
+/home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/convert_case-0.6.0/src/segmentation.rs:

@@ -1,0 +1,12 @@
+/media/L/SoftwareDevelopment/Projects/flavioesteves.github.io/target/wasm32-unknown-unknown/debug/deps/leptos-fcf7f9e100a984ae.rmeta: /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/lib.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/error_boundary.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/for_loop.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/show.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/suspense.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/transition.rs
+
+/media/L/SoftwareDevelopment/Projects/flavioesteves.github.io/target/wasm32-unknown-unknown/debug/deps/libleptos-fcf7f9e100a984ae.rlib: /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/lib.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/error_boundary.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/for_loop.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/show.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/suspense.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/transition.rs
+
+/media/L/SoftwareDevelopment/Projects/flavioesteves.github.io/target/wasm32-unknown-unknown/debug/deps/leptos-fcf7f9e100a984ae.d: /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/lib.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/error_boundary.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/for_loop.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/show.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/suspense.rs /home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/transition.rs
+
+/home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/lib.rs:
+/home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/error_boundary.rs:
+/home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/for_loop.rs:
+/home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/show.rs:
+/home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/suspense.rs:
+/home/yomi/.cargo/registry/src/github.com-1ecc6299db9ec823/leptos-0.2.5/src/transition.rs:
