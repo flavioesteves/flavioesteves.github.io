@@ -9,6 +9,7 @@ body {
   font-family: "Oswald", sans-serif;
   background: var(--bg);
   color: var(--color);
+	transition:color var(--animate) ease-in-out, background var(--animate) ease-in-out;
 }
 
 a {
@@ -20,7 +21,7 @@ ul {
   list-style: none;
 }
 
-h2,h3,h4 {
+h2,h3,h4, h6 {
   text-transform: uppercase;
 }
 

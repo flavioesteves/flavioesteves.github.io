@@ -14,23 +14,22 @@
       width: 25%;
       margin: 0;
       padding: 0;
-
-  a {
-      color: var(--bg);
+        a {
+          color: var(--bg);
         &:hover {
           color: var(--highlight);
          }
       }
     }
-
-      h1 {
-        font-size: 4rem;
-        line-height: 1.2;
+    h1 {
+      font-size: 4rem;
+      line-height: 1.2;
       }
     }
   }
 
 #main-nav {
+overflow: auto;
   padding-top: 1rem;
 
   display: flex;
@@ -50,3 +49,89 @@
     }
   }
 }
+
+
+@mixin label-properties {
+  padding:8px 12px;
+  min-width:32px;
+	text-align:center;
+	color:var(--bg);
+}
+
+#theme-switch {
+  #label {
+    &-light {
+      @include label-properties;
+	    letter-spacing:-0.031px;
+      }
+    &-dark {
+      @include label-properties;
+	    letter-spacing:-0.15px;
+    }
+  }
+
+  .mode-toggle {
+	  display:inline-flex;
+	  flex-direction:row;
+	  align-items:center;
+  }
+
+  .toggle-switch {
+	  margin:0;
+	  padding:0;
+	  width:48px;
+	  height:28px;
+	  border:none;
+	  outline:none;
+	  overflow:hidden;
+	  position:relative;
+	  border-radius:14px;
+	  display:inline-block;
+	  background:var(--bg);
+    transition: all(--animate) ease-in-out;
+
+     [data-theme="dark"] & {
+      width: 48px;
+    }
+
+
+    &:before {
+      top:4px;
+	    left:24px;
+	    content:"";
+	    width:20px;
+	    height:20px;
+	    display:block;
+	    position:absolute;
+	    border-radius:12px;
+	    background:var(--color);
+      transition: all(--animate) ease-in-out;
+
+      [data-theme="dark"] & {
+        left: 4px;
+      }
+    }
+    &:after {
+      content:"";
+	    top:14px;
+	    right:2px;
+	    width:1px;
+	    height:1px;
+	    display:block;
+	    position:absolute;
+	    border-radius:0.5px;
+	    background:var(--bg);
+      transition: all(--animate) ease-in-out;
+
+      [data-theme="dark"] & {
+        top:-2px;
+	      right:2px;
+	      width:32px;
+  	    height:32px;
+	      border-radius:16px;
+      }
+    }
+}
+}
+
+

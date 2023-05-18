@@ -1,10 +1,28 @@
 // Smartphones
 @media(max-width: 500px) {
+.mode-toggle {
+    margin-top: 6rem;
+  }
+
+#theme-switch {
+    padding-left: 1.5rem;
+    #label {
+      &-light {
+        display: none;
+      }
+      &-dark {
+        display:none;
+      }
+    }
+  }
 
   #header {
     display: fixed;
+    overflow: auto;
     &-home {
       .container {
+
+      place-items: flex-start;
         height: 812px;
         width: 100px;
       }
@@ -12,20 +30,17 @@
       h1 {
         font-size: 2rem;
       }
-      a {
+      a, p{
         font-size: 0.8rem;
+      }
+      
+      .copyright {
+      padding-top: 20rem;
+      padding-left: 1rem;
+      width: 70px
       }
     }
   }
-
-  #main-nav{
-    .copyright {
-      font-size: 0.8rem;
-    
-    }
-  }
-
-
 
 // Home
   #home {

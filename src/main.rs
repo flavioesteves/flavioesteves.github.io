@@ -2,7 +2,6 @@ use leptos::*;
 use leptos_meta::provide_meta_context;
 use leptos_router::*;
 
-mod assets;
 mod pages;
 use pages::about::{About, AboutProps};
 use pages::contact::{Contact, ContactProps};
