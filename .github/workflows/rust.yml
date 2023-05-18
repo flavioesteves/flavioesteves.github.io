@@ -1,9 +1,5 @@
 name: Rust
-on:
-  workflow_run:
-    branches: [master]
-    workflows: [Continuous integration]
-    types: [completed]
+on: push
 
 jobs:
   release:
