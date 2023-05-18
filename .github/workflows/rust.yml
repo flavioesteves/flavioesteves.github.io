@@ -20,6 +20,3 @@ jobs:
       - uses: actions/checkout@v2
 
       - run: trunk build --release --public-url /${{ github.event.repository.name }}/
-
-        with:
-          publish_dir: ./dist
