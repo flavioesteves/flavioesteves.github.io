@@ -1,5 +1,7 @@
 name: Rust
-on: push
+on: 
+  push: 
+    branches: [master]
 
 jobs:
   release:
@@ -12,7 +14,7 @@ jobs:
 
       - uses: jetli/trunk-action@v0.1.0
       - uses: jetli/wasm-bindgen-action@v0.1.0
+      - run: rustup target add wasm32-unknown-unknown
 
       - uses: actions/checkout@v2
-
       - run: trunk build --release --public-url /${{ github.event.repository.name }}/
