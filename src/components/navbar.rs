@@ -1,7 +1,7 @@
 use leptos::*;
 
-use crate::components::cursor_animation::{Animations, AnimationsProps};
-use crate::components::theme_switch::{ThemeSwitch, ThemeSwitchProps};
+use crate::components::cursor_animation::Animations;
+use crate::components::theme_switch::ThemeSwitch;
 
 const COPYRIGHT: &str = "© 2023";
 

@@ -44,7 +44,7 @@ fn send_email() {
         _body.unwrap()
     );
 
-    link.set_attribute("href", &href);
+    link.set_attribute("href", &href).unwrap();
     ()
 }
 

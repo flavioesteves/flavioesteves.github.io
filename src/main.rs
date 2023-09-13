@@ -3,13 +3,13 @@ use leptos_meta::provide_meta_context;
 use leptos_router::*;
 
 mod pages;
-use pages::about::{About, AboutProps};
-use pages::contact::{Contact, ContactProps};
-use pages::homepage::{Homepage, HomepageProps};
-use pages::notfound::{NotFoundPage, NotFoundPageProps};
+use pages::about::About;
+use pages::contact::Contact;
+use pages::homepage::Homepage;
+use pages::notfound::NotFoundPage;
 
 mod components;
-use components::navbar::{Navbar, NavbarProps};
+use components::navbar::Navbar;
 
 #[component]
 pub fn App(cx: Scope) -> impl IntoView {
