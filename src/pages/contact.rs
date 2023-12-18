@@ -1,6 +1,6 @@
 use leptos::*;
 use wasm_bindgen::JsCast;
-use web_sys::{window, Document, HtmlElement, HtmlInputElement, HtmlTextAreaElement, Window};
+use web_sys::{window, Document, HtmlInputElement, HtmlTextAreaElement, Window};
 
 #[component]
 pub fn Contact(cx: Scope) -> impl IntoView {
@@ -44,7 +44,7 @@ fn send_email() {
         _body.unwrap()
     );
 
-    link.set_attribute("href", &href).unwrap();
+    let _ = link.set_attribute("href", &href);
     ()
 }
 
