@@ -3,7 +3,7 @@ use leptos::*;
 const NAME: &str = "Flávio Esteves";
 const LOCATION: &str = "Lisbon, Portugal";
 const RESUME_1: &str =
-    "I am a Fullstack Developer with 5 years of experience in ServiceNow, JavaScript and Java";
+    "I am a Fullstack Developer with 6 years of experience in ServiceNow, JavaScript and Java";
 const RESUME_2: &str = "Currently expanding the stack with Rust && Golang";
 
 #[component]
