@@ -1,14 +1,14 @@
 use leptos::{
-    html::{ElementDescriptor, Input},
+    html::{Input, Textarea},
     *,
 };
 use wasm_bindgen::JsCast;
-use web_sys::{window, Document, HtmlElement, HtmlInputElement, HtmlTextAreaElement, Window};
+use web_sys::{window, Document, HtmlInputElement, HtmlTextAreaElement, Window};
 
 #[component]
 pub fn Contact(cx: Scope) -> impl IntoView {
     let input_node_subject = create_node_ref::<Input>(cx);
-    let input_node_message = create_node_ref::<Input>(cx);
+    let input_node_message = create_node_ref::<Textarea>(cx);
     view! {cx,
     <section id="contact" class="align-right">
         <div class="container">
