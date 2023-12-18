@@ -9,7 +9,7 @@ license = "MIT"
 
 
 [dependencies]
-leptos ="0.5"
+leptos ="0.4"
 leptos_router ={version="0.5", features =["csr"]}
 leptos_meta ="0.5"
 console_log= "1.0.0"
