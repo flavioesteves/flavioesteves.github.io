@@ -14,8 +14,10 @@ jobs:
           toolchain: nightly
           target: wasm32-unknown-unknown
 
-      - uses: jetli/trunk-action@v0.1.0
-      - uses: jetli/wasm-bindgen-action@v0.1.0
+      - uses: jetli/trunk-action@v0.4.0
+      - uses: jetli/wasm-bindgen-action@v0.2.0
+        with:
+          versio: 'latest'
       
       - run: rustup install nightly  && rustup default nightly && rustup target add wasm32-unknown-unknown
       - uses: actions/checkout@v2
