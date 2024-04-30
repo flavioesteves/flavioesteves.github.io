@@ -3,10 +3,10 @@ use wasm_bindgen::JsCast;
 use web_sys::{window, Document, HtmlInputElement, HtmlTextAreaElement, Window};
 
 #[component]
-pub fn Contact(cx: Scope) -> impl IntoView {
-    let input_node_subject = create_node_ref(cx);
-    let input_node_message = create_node_ref(cx);
-    view! {cx,
+pub fn Contact() -> impl IntoView {
+    let input_node_subject = create_node_ref();
+    let input_node_message = create_node_ref();
+    view! {
     <section id="contact" class="align-right">
         <div class="container">
             <div>

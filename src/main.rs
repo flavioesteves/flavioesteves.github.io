@@ -13,18 +13,18 @@ mod components;
 use components::navbar::Navbar;
 
 #[component]
-pub fn App(cx: Scope) -> impl IntoView {
-    provide_meta_context(cx);
+pub fn App() -> impl IntoView {
+    provide_meta_context();
 
-    view! {cx,
+    view! {
     <div id="main">
         <Navbar/>
         <Router>
         <Routes>
-            <Route path="/"  view=|cx| view! {cx, <Homepage/>} />
-            <Route path="/about" view=|cx| view! {cx, <About />} />
-            <Route path="/contact" view=|cx| view! {cx, <Contact />} />
-            <Route path= "*any" view=|cx| view! {cx, <NotFoundPage />} />
+            <Route path="/"  view=|| view! {<Homepage/>} />
+            <Route path="/about" view=|| view! {<About />} />
+            <Route path="/contact" view=|| view! {<Contact />} />
+            <Route path= "*any" view=|| view! {<NotFoundPage />} />
         </Routes>
         </Router>
     </div>
@@ -32,5 +32,5 @@ pub fn App(cx: Scope) -> impl IntoView {
 }
 
 pub fn main() {
-    mount_to_body(|cx| view! {cx, <App/>})
+    mount_to_body(|| view! {<App/>})
 }

@@ -3,10 +3,10 @@ use web_sys::{window, Document, Element, Window};
 
 /// Theme Switcher beetween dark and light theme colors
 #[component]
-pub fn ThemeSwitch(cx: Scope) -> impl IntoView {
+pub fn ThemeSwitch() -> impl IntoView {
     let is_dark = get_theme();
 
-    let (prefers_theme, set_prefers_theme) = create_signal(cx, is_dark);
+    let (prefers_theme, set_prefers_theme) = create_signal(is_dark);
 
     let change_theme = move |_| {
         set_prefers_theme.update(|dark| *dark = !*dark);
@@ -17,7 +17,7 @@ pub fn ThemeSwitch(cx: Scope) -> impl IntoView {
         }
     };
 
-    view! { cx,
+    view! {
     <div id="theme-switch">
     <div class="mode-toggle noselect">
         <h6 id="label-dark">"Dark"</h6>

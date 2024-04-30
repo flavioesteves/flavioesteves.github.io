@@ -1,13 +1,13 @@
 use leptos::*;
 
-use crate::components::cursor_animation::{Animations};
-use crate::components::theme_switch::{ThemeSwitch};
+use crate::components::cursor_animation::Animations;
+use crate::components::theme_switch::ThemeSwitch;
 
 const COPYRIGHT: &str = "© 2023";
 
 #[component]
-pub fn Navbar(cx: Scope) -> impl IntoView {
-    view! {cx,
+pub fn Navbar() -> impl IntoView {
+    view! {
 
     <Animations />
     <header id="header-home">

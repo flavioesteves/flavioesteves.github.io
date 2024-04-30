@@ -7,8 +7,8 @@ const RESUME_1: &str =
 const RESUME_2: &str = "Currently expanding the stack with Rust && Golang";
 
 #[component]
-pub fn Homepage(cx: Scope) -> impl IntoView {
-    view! {cx,
+pub fn Homepage() -> impl IntoView {
+    view! {
         <section id="home-a" class="align-right">
             <div class="container">
                 <div id="personal-image" class="pic" />

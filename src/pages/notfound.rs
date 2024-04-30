@@ -1,10 +1,10 @@
 use leptos::*;
 
 #[component]
-pub fn NotFoundPage(cx: Scope) -> impl IntoView {
+pub fn NotFoundPage() -> impl IntoView {
     log::debug!("Start NotFound");
 
-    view! {cx,
+    view! {
         <>
             <h1 class="align-right">"Not Found"</h1>
         </>

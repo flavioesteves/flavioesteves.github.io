@@ -3,7 +3,7 @@ use wasm_bindgen::prelude::*;
 use web_sys::{Event, HtmlElement};
 
 #[component]
-pub fn Animations(cx: Scope) -> impl IntoView {
+pub fn Animations() -> impl IntoView {
     let window = window();
 
     let cursor_animation = make_cursor_animation();
@@ -13,7 +13,6 @@ pub fn Animations(cx: Scope) -> impl IntoView {
     cursor_animation.forget();
 
     view! {
-        cx,
         <div id="circle"></div>
         <div id="cursor"></div>
     }
